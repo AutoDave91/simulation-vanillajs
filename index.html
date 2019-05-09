@@ -23,17 +23,31 @@
     <section class="boxes">
         <div id="expense-box">
             <h3 id="expense-text">Monthly Expenses</h3>
-            <ul id="bills">
-                <li>Groceries $104 <input type="image" src="assets/trash_can.svg" alt="delete" width="10vw" height="10vh"></li>
-                <li>Utilities $134 <input type="image" src="assets/trash_can.svg" alt="delete" width="10vw" height="10vh"></li>
-            </ul>
+            <section class="bills">
+                <ul id="items">
+                    <li>Groceries</li>
+                    <li>$104</li>
+                    <li>Utilities</li>
+                    <li>$104</li>
+                </ul>
+                <div class="trash">
+                    <input type="image" src="assets/trash_can.svg" alt="delete" width="20vw" height="20vh">
+                    <input type="image" src="assets/trash_can.svg" alt="delete" width="20vw" height="20vh">
+                </div>
+            </section>
         </div>
         <div id="bill-box">
             <h3 id="add-bill">Add Bill</h3>
-            <ul id="input">
-                <li> Name: <input type="text"></li>
-                <li> Amount: <input type="text"></li>
-            </ul>
+            <section class="input">
+                <ul class="text-input-names">
+                    <li> Name</li>
+                    <li> Amount</li>
+                </ul>
+                <div class="text-inputs">
+                    <input type="text" size="25">
+                    <input type="text">
+                </div>
+            </section>
             <button class="add-bill-button">Add</button>
         </div>
     </section>

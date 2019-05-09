@@ -9,9 +9,20 @@ header{
     align-items: center;
     height: 10vh;
 }
+h1{
+    font-size: 5vh;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    padding: 1vh;
+}
+
 h1, h3, .add-bill-button{
     font-family: 'Righteous', cursive;
 }
+
 .logo{
     display: flex;
     align-items: center;
@@ -21,21 +32,19 @@ h1, h3, .add-bill-button{
     width: 7vw;
     height: 7vh;
 }
-/* h1{
-    
-} */
 .header-text{
     display: flex;
     justify-content: space-between;
     padding-right: 2vw;
 }
-ul{
-    list-style-type: none;
-}
+
 .boxes{
     display: flex;
     justify-content: space-evenly;
     padding-top: 7vh;
+}
+h3, .add-bill-button{
+    font-size: 3vh;
 }
 #expense-box, #bill-box{
     width: 30%;
@@ -47,16 +56,28 @@ ul{
 #expense-box{
     background-color: #EFE8E1;
     color: black;
+    height: 2%;
 }
-
+.bills, .input{
+    display: flex;
+    justify-content: space-between;
+}
+#items{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.trash, .text-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 #bill-box{
     background-color: #54D2E5;
     color: black;
 }
-#adding-bill{
-    display: flex;
-    justify-items: center;
-}
+
 .add-bill-button{
     background-color: #424249;
     color: white;
@@ -65,4 +86,5 @@ ul{
     margin-left: 5%;
     margin-top: 3vh;
     border-radius: 5px;
+    font-size: 3vh;
 }

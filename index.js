@@ -1,38 +1,44 @@
 console.log('index.js connected')
+let costs = []
 
 function addBill(){
     // create li = name
     let li = document.createElement('li');
-    li.innerText = (document.getElementsByTagName('input')[2].value);
+    li.innerText = (document.getElementById('name').value);
     document.getElementById('items').appendChild(li);
     console.log(li)
     //create li2 = `${amount}`
     let li2 = document.createElement('li');
-    li2.innerText = ('$' + document.getElementsByTagName('input')[3].value);
+    li2.innerText = ('$' + document.getElementById('amount').value);
     document.getElementById('items').appendChild(li2);
     console.log(li2)
-    //create 2li = trash
-    // let trash = document.createElement('input');
-    // trash.setAttribute('image', 'src="assets/trash_can.svg"')
-    // document.getElementById('trash').append(trash);
+    //create trash cans
+    let trash_can = document.createElement('input');
+    trash_can.setAttribute('type', 'image')
+    trash_can.setAttribute('src', 'assets/trash_can.svg')
+    document.querySelector('.trash').appendChild(trash_can);
     //add total to the top
     function budgetTotal(){
-        // let total = value of li2s added together
-        let costs = []
-        // let m = document.getElementsByTagName('input')[3].value;
-        costs.push(document.getElementsByTagName('input')[3].value);
+        // make array with num vs str
+        costs.push(
+            parseFloat(document.getElementById('amount').value));
         console.log(costs)
         // let Total = total.reduce();
-        
-        // console.log(Total)
+        let reducer = function(accumulator, currentValue){
+            return accumulator + currentValue;
+        }
+        let Total = costs.reduce(reducer);
+        console.log(Total)
         //update top with current budget totals
         let h2 = document.createElement('h2');
-        h2.innerText = `Budget Total: $${costs}`;
+        h2.innerText = `Budget Total: $${Total}`;
         document.querySelector('h2').remove();
         document.querySelector('.header-text').append(h2);
     }
     budgetTotal()
 }
+
+//Trash can functions
 // document.querySelectorAll('.trash').addEventListener('click', function(){
 //     //delete li[] & li2[] = 2li[]
 //     document.querySelector('#item')[document.querySelectorAll('.trash')].remove();

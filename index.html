@@ -25,14 +25,14 @@
             <h3 id="expense-text">Monthly Expenses</h3>
             <section class="bills">
                 <ul id="items">
-                    <li>Groceries</li>
+                    <!-- <li>Groceries</li>
                     <li>$104</li>
                     <li>Utilities</li>
-                    <li>$104</li>
+                    <li>$104</li> -->
                 </ul>
                 <session class="trash">
-                    <input type="image" src="assets/trash_can.svg" alt="delete" width="20vw" height="20vh">
-                    <input type="image" src="assets/trash_can.svg" alt="delete" width="20vw" height="20vh">
+                    <!-- <input type="image" src="assets/trash_can.svg" alt="delete" width="20vw" height="20vh">
+                    <input type="image" src="assets/trash_can.svg" alt="delete" width="20vw" height="20vh"> -->
                 </secion>
             </section>
         </div>
@@ -40,12 +40,12 @@
             <h3 id="add-bill">Add Bill</h3>
             <section class="input">
                 <ul class="text-input-names">
-                    <li id="name"> Name</li>
-                    <li id="amount"> Amount</li>
+                    <li> Name</li>
+                    <li> Amount</li>
                 </ul>
                 <div class="text-inputs">
-                    <input type="text" onfocus="this.value=''">
-                    <input type="text" onfocus="this.value=''" value="do not add '$'">
+                    <input id="name" type="text" onfocus="this.value=''">
+                    <input id="amount" type="text" onfocus="this.value=''" value="do not type '$'">
                 </div>
             </section>
             <button onclick="addBill()" class="add-bill-button">Add</button>

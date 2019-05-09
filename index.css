@@ -85,6 +85,9 @@ h3, .add-bill-button{
     height: 3vh;
     width: 20vw;
 }
+#name, #amount{
+    text-align: center;
+}
 .add-bill-button{
     background-color: #424249;
     color: white;

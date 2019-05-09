@@ -1,0 +1,56 @@
+header{
+    background-color: #424249;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 2vh;
+}
+#piggy{
+    width: 7vw;
+    height: 7vh;
+}
+/* h1{
+    
+} */
+.header-text{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2vw;
+}
+ul{
+    list-style-type: none;
+}
+.boxes{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 7vh;
+}
+#expense-box{
+    background-color: #EFE8E1;
+    color: black;
+}
+
+#add-bill-box{
+    background-color: #54D2E5;
+    color: black;
+}
+#adding-bill{
+    display: flex;
+    justify-items: center;
+}
+.add-bill-button{
+    background-color: #424249;
+    color: white;
+    height: 5vh;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    border-radius: 5px;
+}

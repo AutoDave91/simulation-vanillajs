@@ -1,3 +1,6 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
 header{
     background-color: #424249;
     color: white;
@@ -5,6 +8,9 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 10vh;
+}
+h1, h3, .add-bill-button{
+    font-family: 'Righteous', cursive;
 }
 .logo{
     display: flex;
@@ -31,12 +37,19 @@ ul{
     justify-content: space-evenly;
     padding-top: 7vh;
 }
+#expense-box, #bill-box{
+    width: 30%;
+    padding: 2vw;
+}
+#expense-text, #add-bill{
+    padding-bottom: 2vh;
+}
 #expense-box{
     background-color: #EFE8E1;
     color: black;
 }
 
-#add-bill-box{
+#bill-box{
     background-color: #54D2E5;
     color: black;
 }
@@ -48,9 +61,8 @@ ul{
     background-color: #424249;
     color: white;
     height: 5vh;
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
     margin-top: 3vh;
-    margin-bottom: 3vh;
     border-radius: 5px;
 }

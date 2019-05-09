@@ -49,6 +49,7 @@ h3, .add-bill-button{
 #expense-box, #bill-box{
     width: 30%;
     padding: 2vw;
+    border-radius: 5px;
 }
 #expense-text, #add-bill{
     padding-bottom: 2vh;
@@ -76,8 +77,14 @@ h3, .add-bill-button{
 #bill-box{
     background-color: #54D2E5;
     color: black;
+    height: 2%;
 }
-
+.text-inputs>input{
+    border: black solid .5px;
+    border-radius: 5px;
+    height: 3vh;
+    width: 20vw;
+}
 .add-bill-button{
     background-color: #424249;
     color: white;
@@ -87,4 +94,5 @@ h3, .add-bill-button{
     margin-top: 3vh;
     border-radius: 5px;
     font-size: 3vh;
+    border: #424249;
 }
